@@ -49,6 +49,15 @@
 
 
 
-a = int(input("Enter:"))
-b = int(input("Enter: "))
-print(a/b)
+
+# numbers = [1, 2, 3, 4, 5]
+
+# def square(num):
+#     return num ** 2
+
+# squared_numbers = list(map(square, numbers))
+# print(squared_numbers)
+
+# result = (lambda x: (x**2 + 2*x - 1) if x > 0 else (x**3 - x + 4))(3)
+# print(result)  # 14
+
