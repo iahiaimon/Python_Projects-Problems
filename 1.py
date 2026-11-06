@@ -5,13 +5,28 @@
 # avg = sum(data) / len(data)
 # print(round(avg,1))
 
-def f(n):
-    if n<5:
-        return f(n+1) + f(n+2) + f(n+3)
+# def f(n):
+#     if n<5:
+#         return f(n+1) + f(n+2) + f(n+3)
     
-    else:
-        return n
+#     else:
+#         return n
 
-s = f(2)
-print(s)
+# s = f(2)
+# print(s)
 
+# points = [(0,0) , (3,0) , (3,4) , (0,4)]
+# x , y = 0 ,0
+# for px , py in points:
+#     x += px
+#     y += py
+
+# print(x , y)
+
+A = 0
+for i in range(10):
+    A[i] = 9 - i
+for i in range(4):
+    k = A[i]
+    A[i] = A[9 - i]
+    A[9 - i] = k
