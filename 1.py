@@ -23,10 +23,24 @@
 
 # print(x , y)
 
-A = 0
-for i in range(10):
-    A[i] = 9 - i
-for i in range(4):
-    k = A[i]
-    A[i] = A[9 - i]
-    A[9 - i] = k
+# A = [0]
+# for i in range(10):
+#     Ai = 9 - i
+# for i in range(4):
+#     k = A[i]
+#     A[i] = A[9 - i]
+#     A[9 - i] = k
+
+
+
+def vote(d1,d2,d3):
+    if abs(d1-d2) <= 1:
+        return(d1+d2)//2
+    elif abs(d1-d3) <= 1:
+        return(d1+d3)//2
+    elif abs(d2-d3) <= 1:
+        return(d2+d3)//2
+    else:
+        return d1
+
+print(vote(100,101,105))
