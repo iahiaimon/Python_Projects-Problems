@@ -1,0 +1,14 @@
+arr = [-1, 5, 2, 7, 20, 15, 80, 93, 46, 33, 26, 6]
+target = 10
+st = 0
+end = len(arr) - 1
+
+while st <= end:
+    if target != arr[st]:
+        st += 1
+    else:
+        print("Target found ", arr[st])
+        print("Index of the number is : ", st)
+        break
+else:
+    print("Number is not in the array.")

@@ -4,7 +4,7 @@ st = 0
 end = len(arr) - 1
 
 while st <= end:
-    mid = (st + end) / 2
+    mid = (st + (end-st)) / 2 # To prevent overflow (st int-mx , end int-max)
     mid = int(mid)
 
     if target > arr[mid]:
