@@ -1,7 +1,22 @@
-l1 = [-1 , 2 , 3 , 5 , 6 , 7 , 9 , 10 , 12 , 15 , 16 , 18 , 19 , 20]
+arr = [-1, 4, 7, 8, 12, 17, 20, 25, 30]
+target = 20
+st = 0
+end = len(arr) - 1
 
-tar = 19
+while st <= end:
+    mid = (st + end) / 2
 
-a = len(l1)
-print(a)
-while 
+    mid = int(mid)
+
+    if target > arr[mid]:
+        st = mid + 1
+
+    elif target < arr[mid]:
+        end = mid - 1
+
+    elif target == arr[mid]:
+        print("Target found ", arr[mid])
+        print("Index of the number is : " , mid)
+    else:
+        print("Number is not in the array.")
+    
