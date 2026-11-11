@@ -1,11 +1,10 @@
 arr = [-1, 4, 7, 8, 12, 17, 20, 25, 30]
-target = 20
+target = 33
 st = 0
 end = len(arr) - 1
 
 while st <= end:
     mid = (st + end) / 2
-
     mid = int(mid)
 
     if target > arr[mid]:
@@ -14,9 +13,9 @@ while st <= end:
     elif target < arr[mid]:
         end = mid - 1
 
-    elif target == arr[mid]:
-        print("Target found ", arr[mid])
-        print("Index of the number is : " , mid)
     else:
-        print("Number is not in the array.")
-    
+        print("Target found ", arr[mid])
+        print("Index of the number is : ", mid)
+        break
+else:
+    print("Number is not in the array.")
